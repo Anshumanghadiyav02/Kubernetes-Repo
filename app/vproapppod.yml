@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: todo-app
+  labels:
+    app: todo-app
+
+spec:
+  containers:
+    - name: todoapp
+      image: anshu0608/todo-app:latest
+      ports:
+        - name: todoapp-port
+          containerPort: 8001
